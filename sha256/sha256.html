@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sha256加密测试</title>
+<script type="text/javascript" src="lib/sha256.js"></script>
+</head>
+<body>
+
+<form>
+  <table cellspacing="1" cellpadding="4" border="0" bgcolor="#eeeeee" align="center">
+    <tbody><tr>
+       <td valign="top"><b>您输入的数据：</b></td>
+	   <br /> 
+	   <td><textarea name="yourinput" cols="55" rows="3"></textarea></td>
+    </tr>
+    <tr>
+       <td>&nbsp;</td><td><input type="button" value="点击转换" onclick="javascript:this.form.yourhash.value=sha256_digest(this.form.yourinput.value)"></td>
+    </tr><tr>
+       <td><b>转换成sha256的值:<b></b></b></td>
+       <td><input type="text" name="yourhash" size="75"></td>
+    </tr>
+  </tbody></table>
+</form>
+
+</body>
+</html>
